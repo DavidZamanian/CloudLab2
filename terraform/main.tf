@@ -58,6 +58,6 @@ resource "azurerm_linux_web_app" "this" {
 
 resource "azurerm_app_service_source_control" "this" {
   app_id   = azurerm_linux_web_app.this.id
-  repo_url = "https://github.com/<org>/<repo>"
+  repo_url = "https://github.com/DavidZamanian/CloudLab2"
   branch   = "main"
 }
